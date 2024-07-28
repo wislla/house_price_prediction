@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "house-price-prediction"
+version = "0.1.0"
+description = "Previsão de preços de imóveis"
+authors = ["Wislla"]
+readme = "README.md"
+
+[tool.mypy]
+ignore_missing_imports = true
+
+[tool.poetry.dependencies]
+python = "^3.11"
+flask = "^3.0.3"
+scikit-learn = "^1.5.1"
+pandas = "^2.2.2"
+numpy = "^2.0.1"
+matplotlib = "^3.9.1"
+seaborn = "^0.13.2"
+kaggle = "^1.6.17"
+requests = "^2.32.3"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.2"
+black = "^24.4.2"
+flake8 = "^7.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
